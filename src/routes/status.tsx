@@ -8,7 +8,8 @@ import { QrisPanel } from "@/components/QrisPanel";
 
 export const Route = createFileRoute("/status")({
   component: StatusPage,
-  validateSearch: (s: Record<string, unknown>) => ({ no: (s.no as string) || "" }),
+  validateSearch: (s: Record<string, unknown>): { no?: string } =>
+    s.no ? { no: String(s.no) } : {},
 });
 
 type Order = {
