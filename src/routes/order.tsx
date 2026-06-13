@@ -15,10 +15,10 @@ function OrderPage() {
   const cart = useCart();
   const nav = useNavigate();
   const [form, setForm] = useState({ customer_name: "", customer_phone: "", address: "", notes: "" });
-  const [paymentMethod, setPaymentMethod] = useState("Bayar di Toko");
+  const [paymentMethod, setPaymentMethod] = useState("Bayar Langsung");
   const [loading, setLoading] = useState(false);
 
-  const PAYMENTS = ["QRIS", "Bayar di Toko"];
+  const PAYMENTS = ["QRIS", "Bayar Langsung"];
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
