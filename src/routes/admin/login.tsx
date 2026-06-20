@@ -95,6 +95,12 @@ function AdminLogin() {
             {loading ? "Memproses..." : "Login"}
           </button>
         </form>
+        <div className="mt-4 text-center">
+          <Link to="/" className="inline-block text-sm text-[#8B5E34] hover:underline">
+            Kembali ke beranda
+          </Link>
+        </div>
+
       </div>
     </div>
   );
