@@ -1,7 +1,8 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Toaster, toast } from "sonner";
+
 
 export const Route = createFileRoute("/admin/login")({ component: AdminLogin });
 
@@ -94,6 +95,12 @@ function AdminLogin() {
             {loading ? "Memproses..." : "Login"}
           </button>
         </form>
+        <div className="mt-4 text-center">
+          <Link to="/" className="inline-block text-sm text-[#8B5E34] hover:underline">
+            Kembali ke beranda
+          </Link>
+        </div>
+
       </div>
     </div>
   );
