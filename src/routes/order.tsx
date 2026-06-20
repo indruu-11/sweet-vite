@@ -122,11 +122,6 @@ function OrderPage() {
               </div>
             </div>
           </div>
-          {paymentMethod === "QRIS" && cart.items.length > 0 && (
-            <div className="mt-4">
-              <QrisPanel total={cart.total} />
-            </div>
-          )}
           <button disabled={loading} className="mt-6 w-full rounded-md bg-[#8B5E34] py-3 font-medium text-white hover:bg-[#6f4a28] disabled:opacity-60">
             {loading ? "Mengirim..." : "Kirim Pesanan"}
           </button>
