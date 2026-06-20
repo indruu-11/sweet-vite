@@ -7,7 +7,6 @@ import { rupiah } from "@/lib/format";
 import { useCart } from "@/lib/cart";
 import { Toaster, toast } from "sonner";
 import { Trash2, Plus, Minus } from "lucide-react";
-import { QrisPanel } from "@/components/QrisPanel";
 
 export const Route = createFileRoute("/order")({ component: OrderPage });
 
